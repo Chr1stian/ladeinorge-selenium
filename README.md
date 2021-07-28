@@ -26,3 +26,9 @@ http://docker-host-ip:5000/startCharging?phone=12345678&password=replaceMe&charg
 
 - Phone and password are credentials used when signing into [ladeinorge.no](https://ladeinorge.no)
 - Charger ID can be found at the end of URL after searching and selecting a charger at [https://ladeinorge.no/start-ladestasjonen/](https://ladeinorge.no/start-ladestasjonen/)
+
+### See program in action
+Navigate to `docker-host-ip:8900` in a browser to open a VNC connection to the browser. Password is `secret`
+
+### Check Selenium Grid
+Navigate to `docker-host-ip:4444` in a browser
