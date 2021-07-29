@@ -10,6 +10,9 @@ As ladeinorge/Defa does not provide a public API and I was unable to reverse-eng
 ## Limitations
 There is basically no error handling
 
+### Linux
+Add ```172.17.0.1 host.docker.internal``` to ```/etc/hosts```
+
 ## Requirements
 - Docker
 
