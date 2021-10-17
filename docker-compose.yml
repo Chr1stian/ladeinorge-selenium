@@ -3,6 +3,7 @@ services:
   app:
     build: .
     command: python login_startcharging.py
+    network_mode: host
     ports:
       - "5000:5000"
     volumes:
@@ -21,6 +22,7 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - DBUS_SESSION_BUS_ADDRESS=/dev/null
+    network_mode: host
     ports:
       - "6900:5900"
       - "8900:7900"
@@ -31,6 +33,7 @@ services:
   selenium-hub:
     image: selenium/hub:4.0.0-rc-1-prerelease-20210618
     container_name: selenium-hub
+    network_mode: host
     ports:
       - "4442:4442"
       - "4443:4443"
