@@ -9,7 +9,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 def login(phone, password):
     print("Getting driver")
-    driver = webdriver.Remote("http://localhost:4444/wd/hub", DesiredCapabilities.CHROME.copy())
+    driver = webdriver.Remote("http://host.docker.internal:4444/wd/hub", DesiredCapabilities.CHROME.copy())
 
 
     print("Using driver to login")
